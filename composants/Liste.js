@@ -2,7 +2,7 @@ import React from 'react'
 import { useState,useEffect } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link';
-import { FaHotel, FaBell , FaSignOutAlt,  FaBars ,FaThLarge,FaPlus } from "react-icons/fa";
+import {FaBell , FaSignOutAlt,  FaBars ,FaThLarge,FaPlus } from "react-icons/fa";
 import CardHotels from './CardHotels';
 
 
@@ -32,7 +32,6 @@ const Liste = () => {
 
   return (
    <Container>
-    {/* sOpen={isSidebarOpen}> */}
          <Main>
            <Header>
              <Headitem>
@@ -44,7 +43,6 @@ const Liste = () => {
                </Headermenu>
                <div>
                 <Forsearch>
-                {/* <FaSearch color='#A0A0A0' /> */}
                  <Search placeholder="Recherche" />
                  <FaBell />
                  <Photo

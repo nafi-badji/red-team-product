@@ -102,10 +102,11 @@ const Logoproduct = styled.div`
   font-weight: 400;
   font-size: 15px;
   margin-right: 3.5rem;
+  margin-top: 1.5rem;
 `;
 const MenuItem = styled.div`
-  margin-left: 0.6rem;
-  margin-top: 0.3rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
   color: #fff;
   font-family: Roboto, sans-serif;
   font-size: 12px;
