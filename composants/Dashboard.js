@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import styled from "styled-components";
-// import Image from "next/image";
 import { useRouter } from "next/navigation";
 import {
   FaUser,
@@ -14,9 +13,8 @@ import {
   FaBell,
   FaSignOutAlt,
   FaBars,
-  // FaThLarge,
 } from "react-icons/fa";
-// import Link from "next/link";
+
 
 const Dashbord = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -179,41 +177,6 @@ const Container = styled.div`
   }
 `;
 
-// const Sidebar = styled.div`
-//   width: 260px;
-//   color: white;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-
-//   @media (max-width: 600px) {
-//     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-//       url("/images/image de fond.jpg");
-//     background-size: cover;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     position: fixed;
-//     left: ${({ isOpen }) => (isOpen ? "0" : "-260px")};
-//     top: 0;
-//     height: 100%;
-//     z-index: 998;
-//     transition: left 0.3s ease;
-//   }
-
-//   @media (max-width: 768px) {
-//     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-//       url("/images/image de fond.jpg");
-//     background-size: cover;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     position: fixed;
-//     left: ${({ isOpen }) => (isOpen ? "0" : "-260px")};
-//     top: 0;
-//     height: 100%;
-//     z-index: 998;
-//     transition: left 0.3s ease;
-//   }
-// `;
 
 const MenuToggle = styled.button`
   background: none;
@@ -236,74 +199,24 @@ const MenuToggle = styled.button`
   }
 `;
 
-// const Menu = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   gap: 1rem;
-//   padding: 20px;
-//   height: 6rem;
-// `;
-
-// const Logoproduct = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   gap: 4px;
-//   color: #ffffff;
-//   font-family: Roboto, sans-serif;
-//   font-weight: 400;
-//   font-size: 15px;
-//   margin-right: 3.5rem;
-// `;
-
-// const MenuItem = styled.div`
-//   margin-left: 0.6rem;
-//   margin-top: 0.3rem;
-//   color: #fff;
-//   font-family: Roboto, sans-serif;
-//   font-size: 12px;
-// `;
-
-// const Logodash = styled.div`
-//   display: flex;
-//   align-items: center;
-//   gap: 0.5rem;
-//   background: #f2f2f2;
-//   padding: 5px;
-//   color: #000;
-// `;
-
-// const Titre = styled.h2`
-//   cursor: pointer;
-//   padding: 20px;
-//   font-family: Roboto, sans-serif;
-//   font-size: 13px;
-//   text-align: center;
-// `;
-
-// const Hoteltitre = styled.div`
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// `;
-
-// const Profile = styled.div`
-//   border: none;
-//   border-top: 1px solid #ccc;
-//   display: flex;
-//   gap: 1rem;
-//   padding: 20px;
-//   text-align: center;
-//   font-size: 12px;
-// `;
 
 const Header = styled.div`
   display: flex;
+   position: sticky;
+  top: 0;
+  z-index: 1000;
   flex-direction: column;
 `;
 const Main = styled.div`
   flex-grow: 1;
   background-color: #f2f2f2;
+  overflow-y: auto;
+   margin-left: 260px;
+  height: 100vh;
+   
+   @media (max-width: 768px) {
+    margin-left: 0;
+  }
 `;
 
 

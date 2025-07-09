@@ -55,9 +55,9 @@ const Sidebar = styled.div`
   width: 260px;
     height: 100vh;
      position: fixed;
-  left: 0;
-  top: 0;
-  color: white;
+    left: 0;
+    top: 0;
+   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
