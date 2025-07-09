@@ -132,6 +132,9 @@ const Header = styled.div`
   `;
   
   const Headitem = styled.div`
+  position: sticky;
+  top: 0;
+  bottom: 0;
   background-color: #fff;
   border-bottom: 1px solid #ccc;
    padding: 12px;

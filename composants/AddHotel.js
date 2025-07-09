@@ -74,31 +74,7 @@ const Button = styled.button`
   align-self: flex-end;
 `;
 export default function AddHotel() {
-    
-  //   nom: '',
-  //   adresse: '',
-  //   email: '',
-  //   telephone: '',
-  //   prix: '',
-  //   devise: 'XOF',
-  //   photo: null,
-  // });
-
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setFormData(prev => ({ ...prev, [name]: value }));
-  // };
-
-  // const handlePhotoChange = (e) => {
-  //   setFormData(prev => ({ ...prev, photo: e.target.files[0] }));
-  // };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log('Formulaire soumis :', formData);
-
-   
-  // };
+  
     
 
   
@@ -135,9 +111,7 @@ export default function AddHotel() {
         const data = await response.json();
         if (response.ok) {
     toast.success("Hôtel ajouté avec succès !");
-    setTimeout(() => {
-      router.push("/dashbord/listehotels"); // Change ce chemin selon ta route réelle
-    }, 1000); // 1 secondes pour laisser le temps au toast de s'afficher
+      router.push("/dashbord/listehotels"); 
   
     // Réinitialiser le formulaire
     setNom(""); setAdresse(""); setEmail("");
