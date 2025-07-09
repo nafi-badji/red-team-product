@@ -127,14 +127,14 @@ const Main = styled.div`
 `;
 
 const Header = styled.div`
+ position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   flex-direction: column;
   `;
   
   const Headitem = styled.div`
-  position: sticky;
-  top: 0;
-  bottom: 0;
   background-color: #fff;
   border-bottom: 1px solid #ccc;
    padding: 12px;
