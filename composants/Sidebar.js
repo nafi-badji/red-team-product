@@ -53,10 +53,15 @@ export default SidebarFixe
 
 const Sidebar = styled.div`
   width: 260px;
+    height: 100vh;
+     position: fixed;
+  left: 0;
+  top: 0;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+   z-index: 1000;
   
 
   @media (max-width: 600px) {

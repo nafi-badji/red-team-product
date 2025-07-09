@@ -122,8 +122,13 @@ const MenuToggle = styled.button`
 const Main = styled.div`
   flex-grow: 1;
   background-color: #f2f2f2;
-  
-
+  overflow-y: auto;
+   margin-left: 260px;
+  height: 100vh;
+   
+   @media (max-width: 768px) {
+    margin-left: 0;
+  }
 `;
 
 const Header = styled.div`
